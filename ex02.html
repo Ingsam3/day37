@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Event02</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			const myMouseDown = () => {
+				document.getElementById("span").innerHTML ="마우스 Down";
+				
+				
+			} 
+			const myMouseUp = () => {
+				document.getElementById("span").innerHTML ="마우스 UP";
+				
+			} 
+			let cnt =0;
+			const myMouseMove = () => {
+				cnt ++;
+				document.getElementById("count1").innerHTML =cnt;
+				
+			} 
+			const myMouseOver = () => {
+				cnt ++;
+				document.getElementById("count2").innerHTML =cnt;
+				
+			} 
+			const myMouseOut = () => {
+				cnt ++;
+				document.getElementById("count1").innerHTML ="마우스 나감";
+				
+			} 
+		
+		</script>
+	
+		<div onmousedown="myMouseDown()" onmouseup="myMouseUp">
+			<span id = "span">이벤트 알아보기 </span>
+		</div>
+		<hr>
+		<div onmousemove="myMouseMove()"
+			style= "background: gray; width: 100px; height: 100px;">
+			<span id ="count1">0</span>
+		</div>
+		<hr>
+		<div onmousemove="myMouseOver()" onmouseout="myMouseOut"
+			style= "background: gray; width: 100px; height: 100px;">
+			<span id ="count2">0</span>
+		</div>
+		
+		
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

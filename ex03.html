@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Evente03</title>
+		<style type="text/css">
+		
+			img {width: 100px; height: 100px;}
+		
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+		 const ChangeImage01 = () => {
+			 document.getElementById("myImage01").src = "2.jpg";
+			 
+		 }
+		 const ChangeImage02 = () => {
+			 document.getElementById("h3");
+			 h3.style.color ="red";
+			 h3.style.textAlign ="center";
+			 h3.style.backgroungColor ="blue"; //css의 값이 모두 합성어-대문자형태로 씌여져야 한다
+			 
+		 }
+		
+		</script>
+		
+		<img alt="" src ="1.jpg" id="myImage01" onclick="ChangeImage01()">
+		<!-- 위 이미지 클릭시 다른 이미지로 변화 -->
+		<img alt="" src ="1.jpg" id="myImage02" onclick="ChangeImage02()">
+		<!-- 위 이미지 클릭시 h3의 text style 변화 -->
+		<h3 id ="h3">test</h3>
+		<!-- Element 확인하면 이름들이 바뀌어 있음 -->
+		
+	</body>
+</html>
