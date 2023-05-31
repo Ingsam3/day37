@@ -2,9 +2,47 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>연습문제01</title>
+		<title>문제01</title>
+		
+		<style type="text/css">
+		#img {
+			width: 500px; height: 450px;
+			background: pink;
+			margin: auto;
+			text-align: center;
+		}
+		#pic{
+		width: 500px; height: 400px;
+		
+		}
+		</style>
+		
+		<script type="text/javascript">
+
+		var x =1;
+		const before = () =>{
+			if (x == 1) x = 8;
+			else x = x - 1;
+			document.getElementById("pic").src = "./images/" + x + ".jpg";
+			console.log("이전 : " + x);
+		}
+		const after = () =>{
+			if (x == 8) x = 1;
+			else x = x + 1;
+			document.getElementById("pic").src = "./images/" + x + ".jpg";
+			console.log("다음 : " + x);
+		}
+		
+		</script>
+		
 	</head>
 	<body>
+		<div id = "img">
+		<div > <img src="./images/1.jpg" id="pic" /> </div>
+		 <input type="button" value="이전사진" id="before" onclick="before()">
+		 <input type="button" value="다음사진" id ="after" onclick="after()">
+		
+		</div>
 	
 	</body>
 </html>
